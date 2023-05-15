@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blog/pages/user/login_page.dart';
 import 'package:get/get.dart';
 
-class Custom_ElevatedButton extends StatelessWidget {
+class CustomElevatedButton extends StatelessWidget {
 
   final String? text;
-  final pageRoute;
-  const Custom_ElevatedButton({required this.text, required this.pageRoute});
+  final funPageRoute;
+
+
+  const CustomElevatedButton({required this.text, required this.funPageRoute});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class Custom_ElevatedButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           )
       ),
-      onPressed: pageRoute,
+      onPressed: funPageRoute,
       child: Text("$text"),
     );
   }
